@@ -13,6 +13,7 @@
 #define READ_END 0
 #define WRITE_END 1
 
+// This program works , but I don't think this is the right way to do it. 
 int main(int argc, char* argv[])
 {
 	if(argc <=1){

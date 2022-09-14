@@ -78,6 +78,9 @@ void release_pid(int pid)
 	return;
 }
 
+void destoy_bitmap(void){
+	free(bitmap);
+}
 
 int main()
 {
@@ -94,5 +97,6 @@ int main()
 	printf("%d\n", pid);
 	release_pid(pid);
 	printf("%d\n", bitmap[0]);
+	destroy_bitmap();
 	return 0;
 }
